@@ -4,10 +4,8 @@ import javax.swing.JOptionPane;
 
 public class OrdenacaoArray {
     public static void main(String[] args) {
-<<<<<<< HEAD
+
         // invocando o metodo exibir
-=======
->>>>>>> 53d5323ee5d0823f1e23c04e5ffabd76a5b1e2a5
         exibir();
     }
 

@@ -29,6 +29,8 @@ public class OrdenacoaMat {
                     matriz[linha][coluna] = matriz[linha][coluna + 1];
                     matriz[linha][coluna + 1] = aux;
 
+                }
+            }
         }
     }
 

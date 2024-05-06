@@ -3,7 +3,7 @@ package arrays;
 public class RemoveNaPos {
     public static void main(String[] args) {
         int[] array = { 1, 2, 3, 4, 5 };
-        int posicao = 2;
+        int posicao = 0;
         array = removeNaPosicao(array, posicao);
         for (int i : array) {
             System.out.print(i + " ");

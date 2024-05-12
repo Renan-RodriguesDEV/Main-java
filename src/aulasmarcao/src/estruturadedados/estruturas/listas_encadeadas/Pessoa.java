@@ -6,13 +6,16 @@ public class Pessoa {
 	private String nome;
 	private double peso;
 
+	public Pessoa() {
+	}
+
 	public Pessoa(String nome, double peso) {
 		this.nome = nome;
 		this.peso = peso;
 	}
 
 	public String getNome() {
-		return nome;
+		return nome.toUpperCase();
 	}
 
 	public void setNome(String nome) {
@@ -29,7 +32,7 @@ public class Pessoa {
 
 	@Override
 	public String toString() {
-		return nome + " - " + peso;
+		return getNome() + " - " + peso;
 	}
 
 	@Override
@@ -49,5 +52,4 @@ public class Pessoa {
 		return Objects.equals(nome, other.nome)
 				&& Double.doubleToLongBits(peso) == Double.doubleToLongBits(other.peso);
 	}
-
 }

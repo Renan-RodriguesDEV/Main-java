@@ -96,4 +96,39 @@ public class ListaPessoa {
 		}
 	}
 
+	public void insereClassificado(Pessoa pessoa) {
+		NoPessoa novo = new NoPessoa(pessoa);
+		if (tamanho == 0) {
+			head = novo;
+			tail = novo;
+			tamanho = 1;
+		} else {
+			NoPessoa p = head;
+			while (p != null
+					&& p.getPessoa().getNome().compareTo(
+							novo.getPessoa().getNome()) < 0) {
+				p = p.getProximo();
+			}
+			if (p == head) {
+				// Inserção no início
+				novo.setProximo(p);
+				p.setAnterior(novo);
+				head = novo;
+				tamanho++;
+			} else if (p != null) {
+				// Inserção no meio
+				novo.setProximo(p);
+				novo.setAnterior(p.getAnterior());
+				p.getAnterior().setProximo(novo);
+				p.setAnterior(novo);
+				tamanho++;
+			} else {
+				// Inserção no final
+				novo.setAnterior(tail);
+				tail.setProximo(novo);
+				tail = novo;
+				tamanho++;
+			}
+		}
+	}
 }

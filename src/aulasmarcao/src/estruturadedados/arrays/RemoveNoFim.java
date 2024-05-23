@@ -1,4 +1,4 @@
-package arrays;
+package aulasmarcao.src.estruturadedados.arrays;
 
 public class RemoveNoFim {
     public static void main(String[] args) {

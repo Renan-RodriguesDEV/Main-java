@@ -1,4 +1,4 @@
-package estruturas.filas;
+package aulasmarcao.src.estruturadedados.estruturas.filas;
 
 public class TestaFila {
 	public static void main(String[] args) {

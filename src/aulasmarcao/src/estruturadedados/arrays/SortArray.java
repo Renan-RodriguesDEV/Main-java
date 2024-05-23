@@ -1,4 +1,4 @@
-package arrays;
+package aulasmarcao.src.estruturadedados.arrays;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package arrays;
+package aulasmarcao.src.estruturadedados.arrays;
 
 public class RemovePrimeito {
     public static void main(String[] args) {

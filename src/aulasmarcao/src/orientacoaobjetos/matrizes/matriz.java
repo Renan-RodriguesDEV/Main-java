@@ -1,4 +1,4 @@
-package matrizes;
+package aulasmarcao.src.orientacoaobjetos.matrizes;
 
 public class matriz {
     public static void main(String[] args) {
@@ -12,7 +12,7 @@ public class matriz {
         // preenchendo a matriz onde row é uma linha e coluna apenas um coluna
         for (int row = 0; row < rows; row++) {
             for (int coluna = 0; coluna < columns; coluna++) {
-                //preenchendo com um valor random
+                // preenchendo com um valor random
                 double nrd = (int) (1 + Math.random() * 100);
                 matriz[row][coluna] = (int) (Math.sqrt(nrd + coluna * row));
             }

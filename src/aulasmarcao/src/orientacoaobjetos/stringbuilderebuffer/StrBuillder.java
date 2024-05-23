@@ -1,4 +1,4 @@
-package stringbuilderebuffer;
+package aulasmarcao.src.orientacoaobjetos.stringbuilderebuffer;
 
 public class StrBuillder {
     public static void main(String[] args) {

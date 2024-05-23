@@ -1,4 +1,4 @@
-package estruturas.pilhas;
+package aulasmarcao.src.estruturadedados.estruturas.pilhas;
 
 public class TestaPilha {
 	public static void main(String[] args) {

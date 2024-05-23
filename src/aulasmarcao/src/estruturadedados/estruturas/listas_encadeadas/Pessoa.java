@@ -1,4 +1,4 @@
-package estruturas.listas_encadeadas;
+package aulasmarcao.src.estruturadedados.estruturas.listas_encadeadas;
 
 import java.util.Objects;
 

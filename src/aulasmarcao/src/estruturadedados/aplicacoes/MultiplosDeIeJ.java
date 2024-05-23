@@ -1,4 +1,4 @@
-package aplicacoes;
+package aulasmarcao.src.estruturadedados.aplicacoes;
 
 import java.util.Scanner;
 

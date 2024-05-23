@@ -1,4 +1,4 @@
-package arrays;
+package aulasmarcao.src.estruturadedados.arrays;
 
 public class MetodoAppend {
     public static void main(String[] args) {

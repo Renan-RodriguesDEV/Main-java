@@ -1,4 +1,4 @@
-package matematicos;
+package aulasmarcao.src.orientacoaobjetos.matematicos;
 
 public class Fibo {
     public static void main(String[] args) {

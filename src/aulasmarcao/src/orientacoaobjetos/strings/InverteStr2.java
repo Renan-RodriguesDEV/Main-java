@@ -1,4 +1,4 @@
-package strings;
+package aulasmarcao.src.orientacoaobjetos.strings;
 
 public class InverteStr2 {
     public static void main(String[] args) {

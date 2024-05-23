@@ -1,4 +1,4 @@
-package matematicos;
+package aulasmarcao.src.orientacoaobjetos.matematicos;
 
 import java.util.Arrays;
 

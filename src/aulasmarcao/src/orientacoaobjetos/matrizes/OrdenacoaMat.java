@@ -1,4 +1,4 @@
-package matrizes;
+package aulasmarcao.src.orientacoaobjetos.matrizes;
 
 public class OrdenacoaMat {
     public static void main(String[] args) {

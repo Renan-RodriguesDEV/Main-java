@@ -1,4 +1,4 @@
-package aplicacoes;
+package aulasmarcao.src.estruturadedados.aplicacoes;
 
 public class primosNum {
     public static void main(String[] args) {

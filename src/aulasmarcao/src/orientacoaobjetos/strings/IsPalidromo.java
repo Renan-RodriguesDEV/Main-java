@@ -1,4 +1,4 @@
-package strings;
+package aulasmarcao.src.orientacoaobjetos.strings;
 
 import javax.swing.JOptionPane;
 

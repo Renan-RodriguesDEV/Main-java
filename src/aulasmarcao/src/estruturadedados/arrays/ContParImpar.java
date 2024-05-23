@@ -1,4 +1,4 @@
-package arrays;
+package aulasmarcao.src.estruturadedados.arrays;
 
 //package orientacaoObjetos.matematica.matematicosOutros;
 

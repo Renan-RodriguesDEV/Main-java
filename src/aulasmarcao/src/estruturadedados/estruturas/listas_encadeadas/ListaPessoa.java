@@ -1,4 +1,4 @@
-package estruturas.listas_encadeadas;
+package aulasmarcao.src.estruturadedados.estruturas.listas_encadeadas;
 
 public class ListaPessoa {
 	private NoPessoa head;

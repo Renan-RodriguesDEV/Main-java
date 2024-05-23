@@ -1,4 +1,4 @@
-package estruturas.filas;
+package aulasmarcao.src.estruturadedados.estruturas.filas;
 
 import java.util.Arrays;
 
@@ -13,7 +13,7 @@ public class Queue<Type> {
         this.size = elements.length;
     }
 
-    Boolean enqueue(Type dado) throws Exception { // metodo de enfileirar
+    Boolean enqueue(Type dado){ // metodo de enfileirar
         if (size == 0 || qtde == size) {
             return false;
 
@@ -25,7 +25,7 @@ public class Queue<Type> {
         return true;
     }
 
-    Type dequeue() throws Exception { // metodo de desinfileirar
+    Type dequeue(){ // metodo de desinfileirar
         if (qtde == size) { // se tiver 0 n tem da onde tirar
             return null;
         }

@@ -5,105 +5,93 @@ public class Lista {
     private Nos tail;
     private int size;
 
-    public Nos getHead() {
-        return head;
-    }
-
-    public void setHead(Nos head) {
-        this.head = head;
-    }
-
-    public Nos getTail() {
-        return tail;
-    }
-
-    public void setTail(Nos tail) {
-        this.tail = tail;
-    }
-
     public int getSize() {
         return size;
     }
 
     void insereFirst(String inserido) {
         Nos novo = new Nos(inserido);
-        if (!(size == 0)) {
-            head.setAnterior(novo);
-            novo.setProximo(head);
-            head = novo;
-            size++;
-        } else if (head == null || size == 0) {
+        if (size == 0) {
             head = tail = novo;
+            size++;
+        } else {
+            novo.setProximo(head);
+            head.setAnterior(novo);
+            head = novo;
             size++;
         }
     }
 
     void insereLast(String inserido) {
         Nos novo = new Nos(inserido);
-        if (!(size == 0)) {
-            tail.setProximo(novo);
-            novo.setAnterior(tail);
-            tail = novo;
-            size++;
-        } else if (head == null || size == 0) {
+        if (size == 0) {
             head = tail = novo;
+            size++;
+        } else {
+            novo.setAnterior(tail);
+            tail.setProximo(novo);
+            tail = novo;
             size++;
         }
     }
 
     void removeLast() {
-        if (size == 0) {
-            head = tail = null;
-            size--;
-        } else {
-            Nos temp = tail.getAnterior();
-            tail.setAnterior(null);
-            temp.setProximo(null);
-            tail = temp;
-            size--;
+        if (head == null) {
+            if (size == 1) {
+                head = tail = null;
+                size = 0;
+            } else {
+                Nos auxiliar = head.getProximo();
+                auxiliar.setAnterior(null);
+                head.setProximo(null);
+                head = auxiliar;
+                size--;
+            }
         }
     }
 
     void removeFirst() {
-        if (size == 0) {
-            head = tail = null;
-            size--;
-        } else {
-            Nos temp = head.getProximo();
-            head.setProximo(null);
-            temp.setAnterior(null);
-            head = temp;
-            size--;
+        if (head != null) {
+            if (size == 1) {
+                head = tail = null;
+                size = 0;
+            } else {
+                Nos auxiliar = tail.getAnterior();
+                auxiliar.setProximo(null);
+                tail.setAnterior(null);
+                tail = auxiliar;
+                size--;
+            }
         }
     }
 
     boolean contains(String buscado) {
-        Nos newNo = head;
-        while (newNo != null) {
-            if (newNo.getValor().equals(buscado)) {
+        Nos no = head;
+        while (head != null) {
+            if (buscado.equals(no.getValor())) {
                 return true;
             }
-            newNo = newNo.getProximo();
+            no = no.getProximo();
         }
         return false;
     }
 
     String searchList(String buscado) {
-        Nos newNo = head;
-        while (newNo != null) {
-            if (newNo.getValor().equals(buscado)) {
-                return newNo.getValor();
+        Nos no = head;
+        while (head != null) {
+            if (no.getValor().equals(buscado)) {
+                return no.getValor();
             }
-            newNo = newNo.getProximo();
+            no = no.getProximo();
         }
         return null;
     }
 
     void display() {
-        Nos newNo = head;
-        while (newNo != null) {
-            System.out.println(newNo.getValor());
-            newNo = newNo.getProximo();
+        Nos exibido = head;
+        while (exibido != null) {
+            System.out.println(exibido.getValor());
+            exibido = exibido.getProximo();
         }
     }
 

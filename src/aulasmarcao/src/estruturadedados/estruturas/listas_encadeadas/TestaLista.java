@@ -10,8 +10,8 @@ public class TestaLista {
         ls.insereLast("Caga Tronco");
         ls.insereLast("Piranho");
         ls.insereFirst("Delicio");
-
         System.out.println(ls.getSize());
+
         ls.display();
     }
 }

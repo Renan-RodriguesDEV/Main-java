@@ -22,9 +22,9 @@ public class Agenda extends JFrame {
         lbl1 = new JLabel("Nome"); // Rótulo para o campo "Nome"
         lbl2 = new JLabel("Endereco"); // Rótulo para o campo "Endereço"
         lbl3 = new JLabel("Fone"); // Rótulo para o campo "Telefone"
-        txtNome = new JTextField(20); // Campo de texto para "Nome", com 20 colunas
-        txtEndereco = new JTextField(20); // Campo de texto para "Endereço", com 20 colunas
-        txtFone = new JTextField(20); // Campo de texto para "Telefone", com 20 colunas
+        txtNome = new JTextField(); // Campo de texto para "Nome", com 20 colunas
+        txtEndereco = new JTextField(); // Campo de texto para "Endereço", com 20 colunas
+        txtFone = new JTextField(); // Campo de texto para "Telefone", com 20 colunas
         btnProx = new JButton("Proximo"); // Botão "Próximo"
         btnAnt = new JButton("Anterior"); // Botão "Anterior"
         btnExit = new JButton("Sair"); // Botão "Sair"

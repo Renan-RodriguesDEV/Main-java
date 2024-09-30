@@ -1,9 +1,9 @@
-package main.orientacao_obj.poo_ii.conexaocombanco;
+package main.orientacao_obj.poo_ii.conexaocombanco.views;
 
 import java.sql.*;
 
 public class BancoTeste {
-    private static String url = "jdbc:mysql://localhost:3306/test";
+    private static String url = "jdbc:mysql://localhost:3306/loja";
     private static String senha = "";
     private static String user = "root";
 

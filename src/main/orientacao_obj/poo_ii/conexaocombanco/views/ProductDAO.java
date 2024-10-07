@@ -7,7 +7,7 @@ import javax.swing.JOptionPane;
 import main.orientacao_obj.poo_ii.conexaocombanco.models.ConnectionFactory;
 
 public class ProductDAO {
-    public static void main(String[] args) throws Exception  {
+    public static void main(String[] args) throws Exception {
         Connection cnx = null;
         String sql = "select * from produtos";
         cnx = ConnectionFactory.getConexao();
@@ -18,7 +18,8 @@ public class ProductDAO {
             String nome = rs.getString("descricao");
             Double preco = rs.getDouble("preco");
             Date data = rs.getDate("validade");
-            JOptionPane.showMessageDialog(null, "Produto: "+nome+" Preço: "+preco+" Validade: "+data, "Consulta ao Javoso", 0);
+            JOptionPane.showMessageDialog(null, "Produto: " + nome + " Preço: " + preco + " Validade: " + data,
+                    "Consulta ao Javoso", 0);
         }
         cnx.close();
     }
